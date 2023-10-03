@@ -22,10 +22,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* HEADER */
 
-.header {
+header {
     background-color: var(--bg-prim-colour) ;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,4 +49,39 @@ body {
     right: 30px;
     font-size: 2rem;
     color: white;
+}
+
+.header ul {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .header i {
+        display: none;
+    }
+
+    .header ul {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        list-style-type: none;
+        margin-right: 1rem;
+    }
+
+    .header li {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .header li:last-child {
+        color: black;
+        background-color: white;
+        padding: 0.4rem;
+        border-radius: 10px;
+    }
 }
