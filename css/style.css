@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+/* CUSTOM */
+:root {
+    --bg-prim-colour: #0084fd
+}
+
 /* COMMON */
 
 body {
@@ -15,4 +20,26 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--bg-prim-colour) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.header img {
+    position: relative;
+    left: 30px;
+}
+
+.header i {
+    position: relative;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
 }
