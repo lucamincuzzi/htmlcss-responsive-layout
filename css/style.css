@@ -8,7 +8,8 @@
 
 /* CUSTOM */
 :root {
-    --bg-prim-colour: #0084fd
+    --bg-prim-colour: #0084fd;
+    --bg-demo-card: #b5ddff;
 }
 
 /* COMMON */
@@ -26,10 +27,16 @@ a {
     cursor: pointer;
 }
 
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 /* HEADER */
 
 header {
-    background-color: var(--bg-prim-colour) ;
+    background-color: var(--bg-prim-colour);
 }
 
 .header {
@@ -84,4 +91,18 @@ header {
         padding: 0.4rem;
         border-radius: 10px;
     }
+}
+
+/* MAIN */
+
+#demo .container {
+    width: 85%;
+    margin-top: 3rem;
+}
+
+#demo .card {
+    background-color: var(--bg-demo-card);
+    border-radius: 10px;
+    /* Debug */
+    min-height: 600px;
 }
